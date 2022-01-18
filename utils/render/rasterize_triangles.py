@@ -21,8 +21,9 @@ import sys
 import os
 import tensorflow as tf
 
-
-
+print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+print(os.path.join(
+    os.path.dirname(os.path.abspath(__file__)),'kernels/rasterize_triangles_kernel_1.so'))
 rasterize_triangles_module = tf.load_op_library(os.path.join(
     os.path.dirname(os.path.abspath(__file__)),'kernels/rasterize_triangles_kernel_1.so'))
 
